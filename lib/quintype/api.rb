@@ -19,6 +19,7 @@ module Quintype
     autoload :MenuItem,         "quintype/api/menu_item"
     autoload :Stack,            "quintype/api/stack"
     autoload :Story,            "quintype/api/story"
+    autoload :Author,           "quintype/api/author"
 
     autoload :StackCollection,  "quintype/api/stack_collection"
 
