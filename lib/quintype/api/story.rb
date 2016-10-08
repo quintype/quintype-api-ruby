@@ -16,6 +16,10 @@ module Quintype::API
       group_keys(args) + story_keys(args)
     end
 
+    def to_liquid
+      stories
+    end
+
     private
     def story_keys(args)
       publisher_id = args[:publisher_id] || stories[0].publisher_id
