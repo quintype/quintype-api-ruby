@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://sketches.quintype.com/api/v1/bulk
+    body:
+      encoding: UTF-8
+      string: '{"requests":{"top":{"story-group":"top","_type":"stories"}}}'
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - Jetty(9.3.z-SNAPSHOT)
+      Transfer-Encoding:
+      - chunked
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sat, 08 Oct 2016 07:33:59 GMT
+      Via:
+      - 1.1 varnish
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-cdg8724-CDG
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1475912039.156790,VS0,VE414
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":{"top":{"stories":[{"author-name":"Tapan Bhat","headline":"5
+        Times Joey was more thoughtful than his other friends","slug":"culture/2016/04/07/5-Times-Joey-was-more-thoughtful-than-his-other-friends","last-published-at":1461312989932,"alternative":{},"sections":[{"id":142,"name":"Culture","display-name":null,"slug":"culture","parent-id":null}],"hero-image-metadata":{"width":2560,"height":1536,"mime-type":"image/jpeg"},"published-at":1461312989932,"id":"2e30cea1-b063-4531-9cbd-4f8631e55f60","hero-image-s3-key":"quintype-demo/2016-04/313c85cc-b6c9-4825-9a61-6421e959fd1f/Friends-season-10-014.jpg","author-id":2041,"first-published-at":1460029776973,"story-template":"listicle"},{"author-name":"Tapan
+        Bhat","headline":"Nawaz Sharif & the Pakistan Army","slug":"politics/2016/10/06/Nawaz-Sharif-and-the-Pakistan-Army","last-published-at":1475756384044,"alternative":{},"sections":[{"id":83,"name":"Politics","display-name":null,"slug":"politics","parent-id":null}],"hero-image-metadata":{"width":5120,"height":3620},"published-at":1475756384044,"id":"74630f9d-7a10-4531-beea-3bc79237af9b","hero-image-s3-key":"quintype-demo/2016-07/1910bb30-b118-475c-aced-9304968c69c8/G-1.jpg","author-id":2041,"first-published-at":1475756384044,"story-template":null},{"author-name":"Tapan
+        Bhat","headline":"Sairee Chahal, Sheroes","slug":"current-affairs/2016/09/23/Sairee-Chahal-Sheroes","last-published-at":1474626659074,"alternative":{},"sections":[{"id":98,"name":"Current
+        Affairs","display-name":null,"slug":"current-affairs","parent-id":null}],"hero-image-metadata":{"width":275,"height":183},"published-at":1474626659074,"id":"78009fc6-51c4-4f4f-8e7c-46fcb2bafe6b","hero-image-s3-key":"quintype-demo/2016-09/e2241726-4270-4dd4-829c-2b0f8426cf0e/SH-1.jpeg","author-id":2041,"first-published-at":1474626659074,"story-template":null},{"author-name":"Tapan
+        Bhat","headline":"5 Timeless Truths From The Serenity Prayer That Offer Wisdom\u00A0","slug":"culture/2015/12/05/5-timeless-truths-from-the-serenity-prayer-that-offer-wisdom","last-published-at":1449327208375,"sections":[{"id":142,"name":"Culture","display-name":null,"slug":"culture","parent-id":null}],"hero-image-metadata":{"width":2355,"height":1563,"mime-type":"image/jpeg","focus-point":[497,990]},"published-at":1449327208374,"id":"21301745-78d1-4c9a-bdf8-c56377f7c0de","hero-image-s3-key":"quintype-demo/2015-12/0b720593-ccf6-4127-b944-db4d5cfe145c/S-1.jpg","author-id":2041,"first-published-at":1449327208375,"story-template":"listicle"},{"author-name":"Tapan
+        Bhat","headline":"Harry Potter & the Sorcerer\u2019s Stone","slug":"entertainment/2016/08/23/Harry-Potter-and-the-Sorcerers-Stone","last-published-at":1471948695381,"alternative":{},"sections":[{"id":81,"name":"Entertainment","display-name":null,"slug":"entertainment","parent-id":null}],"hero-image-metadata":{"width":1920,"height":1080},"published-at":1471948695381,"id":"77edb1b3-744c-4875-835e-17a817f892dd","hero-image-s3-key":"quintype-demo/2016-08/c8a17191-cf5a-4fd9-b93d-f00755d33bf7/AM-1.jpg","author-id":2041,"first-published-at":1471948695381,"story-template":null},{"author-name":"Tapan
+        Bhat","headline":"Abhinav Bindra narrowly misses a medal","slug":"sports/2016/08/09/abhinav-bindra-narrowly-misses-a-medal","last-published-at":1470723365685,"alternative":{},"sections":[{"id":82,"name":"Sports","display-name":"Sports","slug":"sports","parent-id":null}],"hero-image-metadata":{"width":318,"height":159},"published-at":1470723365685,"id":"6bc5bd62-0073-45cc-849f-217758e0984e","hero-image-s3-key":"quintype-demo/2016-08/d17e1618-dfd4-44ef-9f12-00690cf1f131/T-1.jpeg","author-id":2041,"first-published-at":1470723365685,"story-template":null},{"author-name":"Tapan
+        Bhat","headline":"Want To Work From Home? These 10 Hacks Are All You Need!","slug":"current-affairs/2016/09/23/want-to-work-from-home-these-10-hacks-are-all-you-need","last-published-at":1474607803359,"alternative":{},"sections":[{"id":98,"name":"Current
+        Affairs","display-name":null,"slug":"current-affairs","parent-id":null}],"hero-image-metadata":{"width":900,"height":600,"mime-type":"image/jpeg","focus-point":[457,242]},"published-at":1474607803359,"id":"3e920a2c-2835-4cf1-9bda-4703488b7225","hero-image-s3-key":"quintype-demo/2016-09/7b42adbf-c219-4628-a1af-c9b6476bed7a/SH-1.jpg","author-id":2041,"first-published-at":1474607803359,"story-template":"listicle"},{"author-name":"Tapan
+        Bhat","headline":"The Greatest !","slug":"sports/2016/06/08/the-greatest","last-published-at":1465407509866,"alternative":{},"sections":[{"id":82,"name":"Sports","display-name":"Sports","slug":"sports","parent-id":null}],"hero-image-metadata":{"width":2133,"height":1906,"focus-point":[988,258]},"published-at":1465407509866,"id":"1d2fc836-4113-4ae1-8735-377167664892","hero-image-s3-key":"quintype-demo/2016-06/cca8f31e-9264-4ee2-9af0-08eb53be2a26/ABP-1.jpg","author-id":2041,"first-published-at":1465407509866,"story-template":"photo"},{"author-name":"Tapan
+        Bhat","headline":"Government of UP plants 5 crore saplings","slug":"politics/2016/07/20/Government-of-UP-plants-5-crore-saplings","last-published-at":1469023367948,"alternative":{},"sections":[{"id":83,"name":"Politics","display-name":null,"slug":"politics","parent-id":null}],"hero-image-metadata":{"width":2048,"height":1733,"focus-point":[1080,671]},"published-at":1469023367948,"id":"373839de-fa32-47d7-a72a-d9cb04c1f47b","hero-image-s3-key":"quintype-demo/2016-07/59bf9965-8ab4-4c11-bf9f-ada278cda690/GC-1.jpg","author-id":2041,"first-published-at":1468998868913,"story-template":null},{"author-name":"Tapan
+        Bhat","headline":"Tiger missing in Maharastra","slug":"culture/2016/07/27/Tiger-missing-in-Maharastra","last-published-at":1469602750579,"alternative":{},"sections":[{"id":142,"name":"Culture","display-name":null,"slug":"culture","parent-id":null}],"hero-image-metadata":{"width":647,"height":404},"published-at":1469602750579,"id":"82579d8b-4150-4dba-8ddd-2b48b4128df0","hero-image-s3-key":"quintype-demo/2016-07/4460b55a-72f5-4ff4-a04f-c777b49fb130/LT-1.jpg","author-id":2041,"first-published-at":1469601771129,"story-template":null},{"author-name":"Tapan
+        Bhat","headline":"Virat Kohli - captain extraordinaire","slug":"sports/2016/07/23/Virat-Kohli-captain-extraordinaire","last-published-at":1470724607971,"alternative":{},"sections":[{"id":82,"name":"Sports","display-name":"Sports","slug":"sports","parent-id":null}],"hero-image-metadata":{"width":5120,"height":3620,"focus-point":[2208,1160]},"published-at":1470724607971,"id":"e23e6e4d-9fea-4cb5-ae4a-ea8bc234e454","hero-image-s3-key":"quintype-demo/2016-07/1910bb30-b118-475c-aced-9304968c69c8/G-1.jpg","author-id":2041,"first-published-at":1469257851970,"story-template":null},{"author-name":"Tapan
+        Bhat","headline":"Oh! Calcutta","slug":"culture/2015/10/05/oh-calcutta","last-published-at":1452671516656,"sections":[{"id":142,"name":"Culture","display-name":null,"slug":"culture","parent-id":null}],"hero-image-metadata":{"width":570,"height":380,"focus-point":[303,156]},"published-at":1452671516656,"id":"852e01fa-ccb4-4f06-8068-d907a997bdbc","hero-image-s3-key":"quintype-demo/2015-10/76ef287a-23b6-4ffe-b71e-72e88a739809/DJ-3.jpg","author-id":2041,"first-published-at":1444060690297,"story-template":null},{"author-name":"Tapan
+        Bhat","headline":"Navjot Singh Siddhu joins AAP","slug":"politics/2016/07/19/Navjot-Singh-Siddhu-joins-AAP","last-published-at":1468927653875,"alternative":{},"sections":[{"id":83,"name":"Politics","display-name":null,"slug":"politics","parent-id":null}],"hero-image-metadata":{"width":275,"height":183,"focus-point":[200,59]},"published-at":1468927653875,"id":"6d3474fe-95ce-40fb-8dfc-3cdf5ea4919a","hero-image-s3-key":"quintype-demo/2016-01/2d00bde7-a28c-4415-9382-9a9c6fb3c7fc/IPSMF-1.jpeg","author-id":2041,"first-published-at":1468927653875,"story-template":null},{"author-name":"Tapan
+        Bhat","headline":"Omar slams Mehbooba","slug":"politics/2016/07/13/Omar-slams-Mehbooba","last-published-at":1468491163740,"alternative":{},"sections":[{"id":83,"name":"Politics","display-name":null,"slug":"politics","parent-id":null}],"hero-image-metadata":{"width":647,"height":404},"published-at":1468491163740,"id":"435c8fc8-0190-45ef-b35d-5fe93db178ab","hero-image-s3-key":"quintype-demo/2016-07/ab97530f-a461-4ca1-af28-f795daad3b77/O-1.jpg","author-id":2041,"first-published-at":1468388068658,"story-template":null},{"author-name":"Chirdeep
+        Shetty","headline":"I-T probe into arms dealer unearths \u2018Vadra home\u2019
+        in UK","slug":"politics/2016/05/31/i-t-probe-into-arms-dealer-unearths-vadra-home-in-uk","last-published-at":1464661296734,"alternative":{},"sections":[{"id":83,"name":"Politics","display-name":null,"slug":"politics","parent-id":null}],"hero-image-metadata":{"width":1418,"height":853,"mime-type":"image/jpeg","focus-point":[1045,434]},"published-at":1464661296734,"id":"8acf8a70-98b7-410e-b394-ed354d62f076","hero-image-s3-key":"quintype-demo/2016-05/7ae1264b-0330-4eb5-b9d4-f4a4d5746076/vadra06.jpg","author-id":15338,"first-published-at":1464661296734,"story-template":null},{"author-name":"Tapan
+        Bhat","headline":"Quotes of Muhammad Ali, The Greatest","slug":"sports/2016/06/12/quotes-of-muhammad-ali-the-greatest","last-published-at":1465749820542,"alternative":{},"sections":[{"id":82,"name":"Sports","display-name":"Sports","slug":"sports","parent-id":null}],"hero-image-metadata":{"width":299,"height":168,"mime-type":"image/jpeg"},"published-at":1465749820542,"id":"86e5ccae-5fea-4a3a-97e7-d2b2f041b28d","hero-image-s3-key":"quintype-demo/2016-06/6d8af7d2-c4c8-421d-b957-fb26ce6ac705/MA-1.jpeg","author-id":2041,"first-published-at":1465749820542,"story-template":null},{"author-name":"Tapan
+        Bhat","headline":"Neetu Singh decorating Ranbir\u2019s pad","slug":"entertainment/2016/06/20/neetu-singh-decorating-ranbirs-pad","last-published-at":1466416308706,"alternative":{},"sections":[{"id":81,"name":"Entertainment","display-name":null,"slug":"entertainment","parent-id":null}],"hero-image-metadata":{"width":758,"height":374,"mime-type":"image/jpeg"},"published-at":1466416308706,"id":"6cf52618-cb61-48ea-9b71-efd1b4b0ada6","hero-image-s3-key":"quintype-demo/2016-06/5024cbad-de80-4d54-aa69-9be484e0317e/ABP-1.jpg","author-id":2041,"first-published-at":1466415681562,"story-template":null},{"author-name":"Tapan
+        Bhat","headline":"Virat Kohli on his success","slug":"sports/2016/06/10/virat-kohli-on-his-success","last-published-at":1465520552445,"alternative":{},"sections":[{"id":82,"name":"Sports","display-name":"Sports","slug":"sports","parent-id":null}],"hero-image-metadata":{"width":636,"height":477,"focus-point":[315,228]},"published-at":1465520552445,"id":"e059a5ac-4e19-49a0-8768-268e2825e0dd","hero-image-s3-key":"quintype-demo/2016-06/840a5b72-9068-4e36-911e-cac6f548b787/IP-1.jpg","author-id":2041,"first-published-at":1465520552445,"story-template":"video"},{"author-name":"Tapan
+        Bhat","headline":"Is Modi govt anti-talent?","slug":"politics/2016/06/20/Is-Modi-govt-anti-talent","last-published-at":1466408265523,"alternative":{},"sections":[{"id":83,"name":"Politics","display-name":null,"slug":"politics","parent-id":null},{"id":98,"name":"Current
+        Affairs","display-name":null,"slug":"current-affairs","parent-id":null}],"hero-image-metadata":{"width":4348,"height":2609},"published-at":1466408265523,"id":"8e26d88b-62b7-4f13-9bb5-468d6af4e7e2","hero-image-s3-key":"quintype-demo/2016-06/0922fa37-0ef5-426a-afcb-a81301a72fe4/FP-1.jpg","author-id":2041,"first-published-at":1466408265523,"story-template":null},{"author-name":"Tapan
+        Bhat","headline":"5 Key words that the Censors want to remove from Udta Punjab","slug":"entertainment/2016/06/09/5-Key-words-that-the-Censors-want-to-remove-from-Udta-Punjab","last-published-at":1465475401479,"alternative":{},"sections":[{"id":81,"name":"Entertainment","display-name":null,"slug":"entertainment","parent-id":null}],"hero-image-metadata":{"width":758,"height":374,"mime-type":"image/jpeg","focus-point":[358,162]},"published-at":1465475401479,"id":"581a39f6-ef62-4cc7-9182-9a61ff864688","hero-image-s3-key":"quintype-demo/2016-06/de936ded-32bb-4142-be5d-1b52d561fe11/ABP-1.jpg","author-id":2041,"first-published-at":1465475073583,"story-template":"listicle"}]}}}'
+    http_version: 
+  recorded_at: Sat, 08 Oct 2016 07:33:59 GMT
+recorded_with: VCR 3.0.3

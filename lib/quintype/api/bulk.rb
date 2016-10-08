@@ -24,5 +24,9 @@ module Quintype::API
     def get_response(name)
       @responses[name]
     end
+
+    def cache_keys(opts = {})
+      @responses.values.flat_map { |response| response.respond_to?(:cache_keys) ? response.cache_keys(opts) : []  }
+    end
   end
 end
