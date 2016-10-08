@@ -5,6 +5,14 @@ module Quintype::API
     def each
       stories.each { |story| yield story }
     end
+    
+    def method_missing(method, *args)
+      stories.send(method, *args)
+    end
+
+    def respond_to?(method)
+      super || stories.respond_to?(method)
+    end
 
     def location
       return "section-#{params["section-id"]}" if params["section-id"]
