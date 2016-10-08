@@ -41,6 +41,13 @@ module Quintype::API
       response.body["story"]
     end
 
+    def get_tag_by_name(name)
+      response = get("/api/tag/#{name}")
+      return nil if response.status == 404
+      raise ClientException.new("Could not fetch tag", response) unless response.status == 200
+      response.body["tag"]
+    end
+
     def get_stories(params)
       response = get("/api/v1/stories", params)
       raise ClientException.new("Could not get stories", response) unless response.status == 200
