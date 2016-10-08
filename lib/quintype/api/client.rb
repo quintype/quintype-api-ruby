@@ -60,6 +60,12 @@ module Quintype::API
       response.body["results"]
     end
 
+    def get_author(author_id)
+      response = get("/api/v1/authors/#{author_id}")
+      raise ClientException.new("Could not get authors", response) unless response.status == 200
+      response.body["author"]
+    end
+
     def post_bulk(requests)
       response = post("/api/v1/bulk", requests: requests)
       raise ClientException.new("Could not bulk fetch", response) unless response.status == 200

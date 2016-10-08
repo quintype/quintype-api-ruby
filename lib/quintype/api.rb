@@ -20,6 +20,7 @@ module Quintype
     autoload :Stack,            "quintype/api/stack"
     autoload :Story,            "quintype/api/story"
     autoload :Tag,              "quintype/api/tag"
+    autoload :Author,           "quintype/api/author"
 
     autoload :StackCollection,  "quintype/api/stack_collection"
 
