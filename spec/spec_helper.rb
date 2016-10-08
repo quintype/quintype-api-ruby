@@ -14,7 +14,7 @@ RSpec.configure do |config|
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.
   config.before(:all) do
-    Quintype::API::Client.establish_connection("http://localhost:8001")
+    Quintype::API::Client.establish_connection("http://sketches.quintype.com")
   end
 
   config.expect_with :rspec do |expectations|

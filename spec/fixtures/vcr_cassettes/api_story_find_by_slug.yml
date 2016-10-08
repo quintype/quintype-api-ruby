@@ -1,0 +1,101 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://sketches.quintype.com/api/v1/stories-by-slug?slug=the-greatest
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - Jetty(9.3.z-SNAPSHOT)
+      Content-Length:
+      - '4048'
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Sat, 08 Oct 2016 01:57:38 GMT
+      Via:
+      - 1.1 varnish
+      Age:
+      - '0'
+      Connection:
+      - keep-alive
+      X-Served-By:
+      - cache-sin6925-SIN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Timer:
+      - S1475891858.144185,VS0,VE260
+    body:
+      encoding: ASCII-8BIT
+      string: '{"story":{"updated-at":1465407506446,"assignee-id":2041,"author-name":"Tapan
+        Bhat","tags":[{"id":91770,"name":"Muhammad Ali"},{"id":91771,"name":"Boxing"}],"headline":"The
+        Greatest !","storyline-id":null,"votes":{},"story-content-id":"1d2fc836-4113-4ae1-8735-377167664892","slug":"sports/2016/06/08/the-greatest","last-published-at":1465407509866,"alternative":{},"sections":[{"id":82,"name":"Sports","display-name":"Sports","slug":"sports","parent-id":null}],"content-created-at":1465405976374,"owner-name":"Tapan
+        Bhat","custom-slug":null,"push-notification":null,"publisher-id":15,"hero-image-metadata":{"width":2133,"height":1906,"focus-point":[988,258]},"comments":null,"published-at":1465407509866,"storyline-title":null,"summary":"Muhammad
+        Ali in pictures over the years","canonical-url":null,"autotags":[],"status":"published","bullet-type":"123","id":"1d2fc836-4113-4ae1-8735-377167664892","hero-image-s3-key":"quintype-demo/2016-06/cca8f31e-9264-4ee2-9af0-08eb53be2a26/ABP-1.jpg","cards":[{"story-elements":[{"description":"","image-metadata":{"width":1010,"height":675,"mime-type":"image/jpeg"},"page-url":"/story/1d2fc836-4113-4ae1-8735-377167664892/element/9226e244-dbb0-42d1-87a5-89142e043446","type":"image","family-id":"ca5eacf5-315a-4158-8e66-54f232cff263","title":"Muhammad
+        Ali was never shy about lauding his own balletic talents in the boxing ring,
+        and this photograph shows why. His ability to move away from his opponent,
+        Joe Frazier, with such grace makes Frazier\u2019s haymaker look utterly crude.
+        Ali appears to be untouchable. How ironic, then, that Frazier won the contest
+        that was dubbed Fight of The Century.","id":"9226e244-dbb0-42d1-87a5-89142e043446","image-s3-key":"quintype-demo/2016-06/8768ed78-4587-4379-8b86-4d3a8c29c4e2/ABP-1.jpeg","metadata":{},"subtype":null}],"card-updated-at":1465406090966,"content-version-id":"2eeefc40-2463-4003-9612-4d64232347d1","card-added-at":1465406090966,"status":"draft","id":"90aa6edd-ba3c-4008-b6ad-ab6fa16a4568","content-id":"90aa6edd-ba3c-4008-b6ad-ab6fa16a4568","version":1},{"story-elements":[{"description":"","image-metadata":{"width":1010,"height":805,"mime-type":"image/jpeg"},"page-url":"/story/1d2fc836-4113-4ae1-8735-377167664892/element/29df43fa-3c2d-4fc4-a4e9-571afab13ff2","type":"image","family-id":"4bbff772-1080-4259-92fb-600981deb38b","title":"Ali
+        was still known as Cassius Clay when this photo was taken. There\u2019s something
+        boyish about his efforts to impress his audience. I like how one of the women,
+        Ronnie Spector, seems impervious to his bravado. I also like knowing that
+        the guy in the white tuxedo, who is neither overawed nor overshadowed by Clay,
+        is a young Stevie Wonder.","id":"29df43fa-3c2d-4fc4-a4e9-571afab13ff2","image-s3-key":"quintype-demo/2016-06/f9298238-e324-4dfc-b29b-95a3cbdb754b/ABP-1.jpeg","metadata":{},"subtype":null}],"card-updated-at":1465406161407,"content-version-id":"7f71b9a6-eec6-4ef1-a021-ab11edf370c5","card-added-at":1465406090966,"status":"draft","id":"2d40d535-7f45-43e9-a157-ed00c06b5580","content-id":"2d40d535-7f45-43e9-a157-ed00c06b5580","version":2},{"story-elements":[{"description":"","image-metadata":{"width":1010,"height":1289,"mime-type":"image/jpeg"},"page-url":"/story/1d2fc836-4113-4ae1-8735-377167664892/element/c82a217a-58bc-4b33-bb80-9f6bf0cedb75","type":"image","family-id":"c881cb7a-06de-4b8f-8782-262578c89c88","title":"A
+        quick and homespun piece of showmanship which made for a striking photograph.
+        Ali had been accused of being a loud-mouth for always predicting when he would
+        beat his opponents. He needed no words and just two props to fashion a comic
+        response to such criticism","id":"c82a217a-58bc-4b33-bb80-9f6bf0cedb75","image-s3-key":"quintype-demo/2016-06/edd9a007-e4e3-4d62-b750-588fc78d2b4f/ABP-1.jpeg","metadata":{},"subtype":null}],"card-updated-at":1465406251163,"content-version-id":"075808c4-f24d-43bd-8f5c-5d78bf1685d6","card-added-at":1465406161407,"status":"draft","id":"7bb92a30-421e-4275-83e4-2edbbae1b9e1","content-id":"7bb92a30-421e-4275-83e4-2edbbae1b9e1","version":2},{"story-elements":[{"description":"","image-metadata":{"width":1010,"height":669,"mime-type":"image/jpeg"},"page-url":"/story/1d2fc836-4113-4ae1-8735-377167664892/element/e9110fa0-5fba-4c60-8f65-32c3690df0a9","type":"image","family-id":"50dc0035-70eb-4cdb-b9f8-9db198459c7b","title":"This
+        is a scene from a party after Clay beat Sonny Liston for the heavyweight title.
+        Such is the power of his celebrity, the assembled crowd are jostling around
+        him simply to watch him eat. The proximity of Malcolm X to Clay serves as
+        a neat metaphor for the closeness of their relationship at that time.","id":"e9110fa0-5fba-4c60-8f65-32c3690df0a9","image-s3-key":"quintype-demo/2016-06/90af2d69-fe72-4bd3-9de6-3d03622377c7/ABP-1.jpeg","metadata":{},"subtype":null}],"card-updated-at":1465406325116,"content-version-id":"3dd129bc-04c6-4188-8b11-9f49aede51a8","card-added-at":1465406251163,"status":"draft","id":"4e2d7549-1760-40fc-855c-c790e5c97582","content-id":"4e2d7549-1760-40fc-855c-c790e5c97582","version":2},{"story-elements":[{"description":"","image-metadata":{"width":1010,"height":777,"mime-type":"image/jpeg"},"page-url":"/story/1d2fc836-4113-4ae1-8735-377167664892/element/a59625c9-f296-4cdc-bc49-eaf528074d9b","type":"image","family-id":"cc15fe3f-efc7-497e-bb2b-629d11d88b7b","title":"Clay
+        was just 18 when he won Olympic gold in 1960 in the light heavyweight category.
+        Just look how callow he appears, particularly in comparison to the guys to
+        his left and right, who look like 40-year-old bricklayers in comparison.","id":"a59625c9-f296-4cdc-bc49-eaf528074d9b","image-s3-key":"quintype-demo/2016-06/049770e9-c31c-4285-99b0-241dfb0dda68/ABP-1.jpeg","metadata":{},"subtype":null}],"card-updated-at":1465406409589,"content-version-id":"1acc1cc5-5f89-43f3-a748-4df11fff25a7","card-added-at":1465406409589,"status":"draft","id":"6638b604-30db-4779-8f87-8302e47213a5","content-id":"6638b604-30db-4779-8f87-8302e47213a5","version":1},{"story-elements":[{"description":"","image-metadata":{"width":1010,"height":684,"mime-type":"image/jpeg"},"page-url":"/story/1d2fc836-4113-4ae1-8735-377167664892/element/92135efe-1bd0-452a-a546-dbe96be7ef80","type":"image","family-id":"126d7600-1b7a-4df0-93b7-142de8015de0","title":"The
+        initial attraction to this shot is, of course, the quirk of the punchbag.
+        It appears semi-transparent because the photographer has used flash to trap
+        the action in the foreground, while the duration of the overall exposure has
+        rendered the background visible as well. The beautiful silhouettes in the
+        distance behind Ali are critical too.","id":"92135efe-1bd0-452a-a546-dbe96be7ef80","image-s3-key":"quintype-demo/2016-06/3cefd1c4-4021-4c73-a7d5-261dd8f6c329/ABP-1.jpeg","metadata":{},"subtype":null}],"card-updated-at":1465406474111,"content-version-id":"d9db8960-b684-444e-a362-8f3ec6d24f2f","card-added-at":1465406409589,"status":"draft","id":"59be2fea-d785-461f-8629-3a852c2a7990","content-id":"59be2fea-d785-461f-8629-3a852c2a7990","version":2},{"story-elements":[{"description":"","image-metadata":{"width":1010,"height":1148,"mime-type":"image/jpeg"},"page-url":"/story/1d2fc836-4113-4ae1-8735-377167664892/element/f760b1fc-aff9-4455-b2d2-15b98872b3b7","type":"image","family-id":"1deca822-35ee-4206-85e2-ec9bf0965ddc","title":"The
+        juxtaposition between these two figures is great. Even when hunched over,
+        Ali still dwarfs the comedian and singer Sammy Davis Jr, whom he\u2019s teaching
+        how to box. More than that, though, it\u2019s the kind of photograph which
+        attests to Ali\u2019s character and charm outside the ring.","id":"f760b1fc-aff9-4455-b2d2-15b98872b3b7","image-s3-key":"quintype-demo/2016-06/affc2b26-c68e-401c-bbf5-9472c65ad9b8/ABP-1.jpeg","metadata":{},"subtype":null}],"card-updated-at":1465406702831,"content-version-id":"ae9c463d-3b0e-4063-9366-2b3a5979f6ff","card-added-at":1465406702831,"status":"draft","id":"daf7f9e6-212c-49df-8f2b-10dcaee3198f","content-id":"daf7f9e6-212c-49df-8f2b-10dcaee3198f","version":1},{"story-elements":[{"description":"","image-metadata":{"width":1010,"height":667,"mime-type":"image/jpeg"},"page-url":"/story/1d2fc836-4113-4ae1-8735-377167664892/element/c6c908ae-4e5f-4bfc-bdc8-8a7502e77a46","type":"image","family-id":"064d4689-3c02-414e-a557-e9f05099cde4","title":"This
+        shot witnesses a pre-fight scene where Ali is poised with anticipation. His
+        outline is so distinctive \u2013  also, the shadowy figure in the toilet behind
+        Ali; at first I questioned whether he spoiled Ali\u2019s solitude, but I grew
+        to like the subtle detail of their twinning.","id":"c6c908ae-4e5f-4bfc-bdc8-8a7502e77a46","image-s3-key":"quintype-demo/2016-06/a30c6c60-e82e-4c82-a5e6-11a634b644bd/ABP-1.jpeg","metadata":{},"subtype":null}],"card-updated-at":1465406921032,"content-version-id":"788fd0f1-83ce-4d3b-9dab-50edf6e03e43","card-added-at":1465406921032,"status":"draft","id":"eb983ccc-176a-4056-93c1-881577285b41","content-id":"eb983ccc-176a-4056-93c1-881577285b41","version":1},{"story-elements":[{"description":"","image-metadata":{"width":1010,"height":1329,"mime-type":"image/jpeg"},"page-url":"/story/1d2fc836-4113-4ae1-8735-377167664892/element/c4f55786-5079-481d-8366-25896b7d0273","type":"image","family-id":"293e551c-401f-4cc7-b93c-83c27784bde7","title":"This
+        emotive picture was snapped when Clay beat Liston, who was unable to answer
+        the bell for round seven of their 1964 fight. There are many fine photos of
+        this moment taken head on but in this one I like Clay\u2019s explosive pose
+        and the way his cartwheeling limbs extend towards the corners of the frame.
+        It\u2019s as if he\u2019s about to leap out of it.","id":"c4f55786-5079-481d-8366-25896b7d0273","image-s3-key":"quintype-demo/2016-06/02a7e909-ca57-419c-9f9f-613748ed9397/ABP-1.jpeg","metadata":{},"subtype":null}],"card-updated-at":1465407356321,"content-version-id":"1e408c1a-dfa8-4188-bfa7-1ccb41b3b55a","card-added-at":1465406947212,"status":"draft","id":"8ce147a0-02ce-4aa6-b1ab-207ddcedc880","content-id":"8ce147a0-02ce-4aa6-b1ab-207ddcedc880","version":2},{"story-elements":[{"description":"","image-metadata":{"width":1008,"height":1020,"mime-type":"image/jpeg"},"page-url":"/story/1d2fc836-4113-4ae1-8735-377167664892/element/607dec18-defb-4126-957d-a8d4d6181d16","type":"image","family-id":"2bb6dbc5-3db5-4380-818d-b223ab1aecae","title":"In
+        2003 this was voted the greatest sport photo ever by the Observer. The pristine
+        white canvas is the perfect backdrop, accentuating the two fighters whose
+        figures are so neatly counterposed. I can\u2019t imagine boxing will ever
+        look this sublime again.","id":"607dec18-defb-4126-957d-a8d4d6181d16","image-s3-key":"quintype-demo/2016-06/576cb41d-6cc0-4c10-b4ff-eafd5c944b90/ABP-1.jpeg","metadata":{},"subtype":null}],"card-updated-at":1465407448215,"content-version-id":"d7e8790d-795c-41ba-9e67-bfbf744c1d93","card-added-at":1465407382118,"status":"draft","id":"4d9b8b0b-08d2-488e-98d7-b45e052cd287","content-id":"4d9b8b0b-08d2-488e-98d7-b45e052cd287","version":2}],"story-version-id":"40f90cfe-4d77-44a3-9abe-07680b0c7818","content-updated-at":1465407509947,"author-id":2041,"owner-id":2041,"access":null,"first-published-at":1465407509866,"hero-image-caption":"Muhammad
+        Ali lording over Liston","version":15,"story-template":"photo","created-at":1465407502140,"authors":null,"metadata":{},"publish-at":null,"assignee-name":"Tapan
+        Bhat"}}'
+    http_version: 
+  recorded_at: Sat, 08 Oct 2016 01:57:38 GMT
+recorded_with: VCR 3.0.3
