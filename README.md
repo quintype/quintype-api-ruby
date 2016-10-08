@@ -32,13 +32,25 @@ Quintype::API::Client.establish_connection("http://sketches.quintype.com", Farad
 
 ### Subclassing API classes
 
-It is highly recommended that you subclass API sections. This is mostly honored during requests
+It is highly recommended that you subclass API sections. This is mostly honored during requests. If you use liquid, implement a to_liquid method.
 
 ```ruby
 class QtConfig < Quintype::API::Config
+  def to_liquid
+    ActiveSupport::HashWithIndifferentAccess.new to_h
+  end
 end
 
 class Story < Quintype::API::Story
+  def to_liquid
+    ActiveSupport::HashWithIndifferentAccess.new to_h
+  end
+end
+
+class Author < Quintype::API::Author
+  def to_liquid
+    ActiveSupport::HashWithIndifferentAccess.new to_h
+  end
 end
 ```
 
