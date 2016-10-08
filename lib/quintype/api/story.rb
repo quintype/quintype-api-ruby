@@ -1,4 +1,39 @@
 module Quintype::API
+  class StoriesResponse < Struct.new(:params, :stories)
+    include Enumerable
+
+    def each
+      stories.each { |story| yield story }
+    end
+
+    def location
+      return "section-#{params["section-id"]}" if params["section-id"]
+      return "home" if !params["tag"] && !params["section"] && !params["section-name"]
+      nil
+    end
+
+    def cache_keys(args = {})
+      group_keys(args) + story_keys(args)
+    end
+
+    private
+    def story_keys(args)
+      publisher_id = args[:publisher_id] || stories[0].publisher_id
+      key_prefix = (args[:soft] == 'stories' || args[:soft] == "all") ? "s" : ""
+      stories.map { |i| "#{key_prefix}s/#{publisher_id}/#{i.id[0..7]}"}
+    end
+
+    def group_keys(args)
+      if location
+        publisher_id = args[:publisher_id] || stories[0].try(:publisher_id)
+        key_prefix = (args[:soft] == 'stories' || args[:soft] == "all") ? "s" : ""
+        ["#{key_prefix}q/#{publisher_id}/#{params['story-group']}/#{location}"]
+      else
+        []
+      end
+    end
+  end
+
   class StoriesRequest
     def initialize(klazz, story_group)
       @klazz = klazz
@@ -15,7 +50,7 @@ module Quintype::API
     end
 
     def from_response(stories)
-      stories.map {|i| @klazz.from_hash(i) }
+      StoriesResponse.new @params, stories.map {|i| @klazz.from_hash(i) }
     end
 
     def to_bulk_request
